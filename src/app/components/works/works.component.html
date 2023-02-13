@@ -1,0 +1,8 @@
+<div class="bg-base-100 text-center w-11/12 md:w-2/3 mx-auto mb-20">
+    <h3 class="text-neutral font-bold text-3xl my-10">My works</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <ng-container *ngFor="let work of works">
+            <app-work [work]="work"></app-work>
+        </ng-container>
+    </div>
+</div>

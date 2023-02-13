@@ -1,0 +1,27 @@
+<div class="card card-normal lg:w-96 h-full bg-base-100 shadow-xl mx-auto">
+    <figure><img [src]="work?.img" [alt]="work?.title" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        {{ work?.title }}
+        <div *ngIf="work?.infoBadge?.show" class="badge badge-secondary">{{ work?.infoBadge?.text }}</div>
+      </h2>
+      <p>{{ work?.description }}</p>
+      <div class="card-actions justify-end my-4">
+        <ng-container *ngFor="let techBadge of work?.techsBadge">
+          <div class="avatar tooltip w-8" [attr.data-tip]="techBadge.name">
+              <img [src]="techBadge.img" [alt]="techBadge.name" />
+          </div>
+        </ng-container>
+      </div>
+      <div class="card-actions justify-between">
+        <button class="btn gap-2">
+          <fa-icon [icon]="faGithub"></fa-icon>          
+          <span>Github</span>
+        </button>
+        <button class="btn btn-primary gap-2">
+          <span>Website</span>
+          <fa-icon [icon]="faChevronRight"></fa-icon>         
+        </button>
+      </div>
+    </div>
+  </div>
