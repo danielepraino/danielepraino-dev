@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-nav',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 }

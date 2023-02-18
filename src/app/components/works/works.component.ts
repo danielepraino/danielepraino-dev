@@ -9,13 +9,14 @@ import { Work } from 'src/app/models/Work';
 export class WorksComponent {
   works:Work[] = [
     {
-      img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
+      online: true,
+      img: '/assets/img/works-mockup/shitcoin_radar_mockup.jpg',
+      title: 'Shitcoin Radar',
       infoBadge: {
         show: true,
         text: 'NEW'
       },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est. Integer sit amet nisl elementum, scelerisque erat vitae, tristique massa. Aenean in metus metus. Duis a dapibus sapien, eget ullamcorper justo. Donec vestibulum fermentum tempor.',
+      description: 'Shitcoin Radar is a useful application to detect whether a crypto is a shitcoin or not. The "scan" is done by cross-checking the normal score, developer score, ranking, etc. data from the Coingecko API V3.',
       techsBadge: [
         {
           img: '/assets/img/typescript.png',
@@ -28,103 +29,34 @@ export class WorksComponent {
         {
           img: '/assets/img/tailwind.png',
           name: 'TailwindCSS'
-        }
-      ]
-    },
-    {
-      img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
-      infoBadge: {
-        show: true,
-        text: 'NEW'
-      },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est.',
-      techsBadge: [
-        {
-          img: '/assets/img/typescript.png',
-          name: 'TypeScript'
         },
         {
-          img: '/assets/img/angularjs.png',
-          name: 'Angular'
+          img: '/assets/img/lottiefiles.svg',
+          name: 'LottieFiles'
         }
-      ]
+      ],
+      linkGithub: 'https://github.com/danielepraino/shitcoin-radar',
+      linkWebsite: 'https://shitcoinradar.netlify.app/'
     },
     {
+      online: false,
       img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
+      title: 'Not Not Game',
       infoBadge: {
         show: true,
-        text: 'NEW'
+        text: 'COMING SOON'
       },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est. Integer sit amet nisl elementum, scelerisque erat vitae, tristique massa. Aenean in metus metus. Duis a dapibus sapien, eget ullamcorper justo. Donec vestibulum fermentum tempor.',
-      techsBadge: [
-        {
-          img: '/assets/img/typescript.png',
-          name: 'TypeScript'
-        },
-        {
-          img: '/assets/img/angularjs.png',
-          name: 'Angular'
-        }
-      ]
+      description: 'Not Not Angular is a revised version of the game Not Not - A Brain-Buster available for mobile and consoles.',
     },
     {
+      online: false,
       img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
+      title: 'Momentology',
       infoBadge: {
         show: true,
-        text: 'NEW'
+        text: 'COMING SOON'
       },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est. Integer sit amet nisl elementum, scelerisque erat vitae, tristique massa. Aenean in metus metus. Duis a dapibus sapien, eget ullamcorper justo. Donec vestibulum fermentum tempor.',
-      techsBadge: [
-        {
-          img: '/assets/img/typescript.png',
-          name: 'TypeScript'
-        },
-        {
-          img: '/assets/img/angularjs.png',
-          name: 'Angular'
-        }
-      ]
-    },
-    {
-      img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
-      infoBadge: {
-        show: true,
-        text: 'NEW'
-      },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est.',
-      techsBadge: [
-        {
-          img: '/assets/img/typescript.png',
-          name: 'TypeScript'
-        },
-        {
-          img: '/assets/img/angularjs.png',
-          name: 'Angular'
-        }
-      ]
-    },
-    {
-      img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Test',
-      infoBadge: {
-        show: true,
-        text: 'NEW'
-      },
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dictum dui, vitae fermentum est. Integer sit amet nisl elementum, scelerisque erat vitae, tristique massa. Aenean in metus metus. Duis a dapibus sapien, eget ullamcorper justo. Donec vestibulum fermentum tempor.',
-      techsBadge: [
-        {
-          img: '/assets/img/typescript.png',
-          name: 'TypeScript'
-        },
-        {
-          img: '/assets/img/angularjs.png',
-          name: 'Angular'
-        }
-      ]
+      description: 'Momentology is a useful app for mental well-being. Each day you can write a gratitude journal and todo list for your mental well-being.',
     },
   ]
 }
