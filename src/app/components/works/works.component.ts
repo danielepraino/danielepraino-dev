@@ -46,6 +46,7 @@ export class WorksComponent {
       online: false,
       img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
       title: 'Affirma',
+      infoBadge: 'coming soon',
       description: 'Affirma is a useful app for mental well-being. Each day you can write a gratitude journal and todo list for your mental well-being.',
     },
   ]
