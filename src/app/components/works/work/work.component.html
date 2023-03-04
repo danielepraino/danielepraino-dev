@@ -1,5 +1,9 @@
 <div class="card card-normal lg:w-96 h-full bg-base-100 shadow-xl mx-auto">
-    <figure><img [src]="work?.online ? work?.img : '/assets/img/works-mockup/offline_mockup.jpg'" [alt]="work?.title" /></figure>
+    <figure>
+      <a [href]="work?.linkWebsite ? work?.linkWebsite : ''" target="_blank">
+        <img [src]="work?.online ? work?.img : '/assets/img/works-mockup/offline_mockup.jpg'" [alt]="work?.title" />
+      </a>
+    </figure>
     <div class="card-body">
       <h2 class="card-title">
         {{ work?.title }}
