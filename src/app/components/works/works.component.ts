@@ -12,10 +12,7 @@ export class WorksComponent {
       online: true,
       img: '/assets/img/works-mockup/shitcoin_radar_mockup.jpg',
       title: 'Shitcoin Radar',
-      infoBadge: {
-        show: true,
-        text: 'NEW'
-      },
+      infoBadge: 'new',
       description: 'Shitcoin Radar is a useful application to detect whether a crypto is a shitcoin or not. The "scan" is done by cross-checking the normal score, developer score, ranking, etc. data from the Coingecko API V3.',
       techsBadge: [
         {
@@ -42,21 +39,14 @@ export class WorksComponent {
       online: false,
       img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
       title: 'Not Not Game',
-      infoBadge: {
-        show: true,
-        text: 'COMING SOON'
-      },
+      infoBadge: 'coming soon',
       description: 'Not Not Angular is a revised version of the game Not Not - A Brain-Buster available for mobile and consoles.',
     },
     {
       online: false,
       img: 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
-      title: 'Momentology',
-      infoBadge: {
-        show: true,
-        text: 'COMING SOON'
-      },
-      description: 'Momentology is a useful app for mental well-being. Each day you can write a gratitude journal and todo list for your mental well-being.',
+      title: 'Affirma',
+      description: 'Affirma is a useful app for mental well-being. Each day you can write a gratitude journal and todo list for your mental well-being.',
     },
   ]
 }

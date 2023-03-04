@@ -3,7 +3,12 @@
     <div class="card-body">
       <h2 class="card-title">
         {{ work?.title }}
-        <div *ngIf="work?.infoBadge?.show" class="badge" [ngClass]="work?.infoBadge?.text === 'NEW' ? 'badge-success' : 'badge-warning'">{{ work?.infoBadge?.text }}</div>
+        <ng-container [ngSwitch]="work?.infoBadge">
+          <span *ngSwitchCase="'new'" class="badge badge-success">new</span>
+          <span *ngSwitchCase="'updated'" class="badge badge-info">updated</span>
+          <span *ngSwitchCase="'coming soon'" class="badge badge-warning">coming soon</span>
+          <span *ngSwitchDefault></span>
+        </ng-container>
       </h2>
       <p class="text-justify">{{ work?.description }}</p>
       <div *ngIf="work?.online" class="card-actions justify-end my-4">
@@ -14,9 +19,8 @@
         </ng-container>
       </div>
       <div *ngIf="work?.online" class="card-actions justify-between">
-        <a class="btn btn-sm gap-2" [href]="work?.linkGithub" target="_blank">
-          <fa-icon [icon]="faGithub"></fa-icon>          
-          <span>Github</span>
+        <a [href]="work?.linkGithub" target="_blank">
+          <fa-icon [icon]="faGithub" size="2x"></fa-icon>          
         </a>
         <a class="btn btn-sm btn-primary gap-2" [href]="work?.linkWebsite" target="_blank">
           <span>Website</span>
